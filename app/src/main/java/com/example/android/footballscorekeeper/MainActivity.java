@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     int redCardsForTeamB = 0;       //red cards for team B
     int foulsForTeamA = 0;          //fouls for team A
     int foulsForTeamB = 0;          //fouls for team B
+
+    // constants for save app state during rotation
     private static final String SCORE_FOR_TEAM_A = "scoreForTeamA";
     private static final String SCORE_FOR_TEAM_B = "scoreForTeamB";
     private static final String YELLOW_CARDS_FOR_TEAM_A = "yellowCardsForTeamA";
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // remove app title bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 

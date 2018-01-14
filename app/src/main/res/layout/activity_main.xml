@@ -36,7 +36,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/small_space">
+                android:layout_margin="@dimen/x_small_space">
 
                 <TextView
                     android:id="@+id/score_team_a"
@@ -58,7 +58,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/x_small_space">
+                android:layout_marginLeft="@dimen/xx_small_space"
+                android:layout_marginRight="@dimen/xx_small_space"
+                android:layout_marginBottom="@dimen/xx_small_space"
+                >
 
                 <Button
                     style="@style/goals_button"
