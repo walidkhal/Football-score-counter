@@ -29,9 +29,9 @@
         <shape>
             <gradient
                 android:angle="90"
-                android:centerColor="#fff"
-                android:endColor="#9a9b9d"
-                android:startColor="#9a9b9d"
+                android:centerColor="@color/white"
+                android:endColor="@color/silver_gradient_end"
+                android:startColor="@color/silver_gradient_start"
                 android:type="linear"
                 android:centerY="0.7"/>
         </shape>

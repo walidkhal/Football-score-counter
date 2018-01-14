@@ -1,17 +1,155 @@
 <resources>
-
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="manStyle">
+    <!-- root view style -->
+    <style name="parent_viw_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/mainbg1</item>
     </style>
+    <!-- wrapper for teams names  -->
+    <style name="all_teams_name_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/x_large_space</item>
+        <item name="android:layout_marginRight">@dimen/x_large_space</item>
+        <item name="android:layout_marginTop">@dimen/medium_space</item>
+        <item name="android:background">@drawable/all_teams_names_bg</item>
+        <item name="android:orientation" >horizontal</item>
+        <item name="android:padding" >@dimen/xx_small_space</item>
+    </style>
 
+    <!-- team name style -->
+    <style name="each_team_name">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- VS text view style -->
+    <style name="vs_text_style">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- wrapper for teams scores  -->
+    <style name="all_scores_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/xx_large_space</item>
+        <item name="android:layout_marginRight">@dimen/xx_large_space</item>
+        <item name="android:layout_marginTop">@dimen/medium_space</item>
+        <item name="android:background">@drawable/all_score_bg</item>
+        <item name="android:orientation" >vertical</item>
+        <item name="android:padding" >@dimen/small_space</item>
+    </style>
+
+    <!-- each team goal score text view style -->
+    <style name="goals_score">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/small_text_size</item>
+        <item name="android:layout_marginTop">@dimen/small_text_size</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/single_score_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/goals_score_text_size</item>
+    </style>
+
+    <!-- empty text view between goals score -->
+    <style name="space_between_scores">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">.5</item>
+    </style>
+
+    <!-- goal button style -->
+    <style name="goals_button">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/small_space</item>
+        <item name="android:layout_marginRight">@dimen/small_space</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/goal_button_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ball icon style -->
+    <style name="ball_icon">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.25</item>
+        <item name="android:layout_marginRight">@dimen/small_space</item>
+        <item name="android:layout_marginLeft">@dimen/small_space</item>
+    </style>
+
+    <!-- yellow, red and foul buttons style -->
+    <style name="small_button_style">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/x_small_space</item>
+        <item name="android:layout_marginRight">@dimen/x_small_space</item>
+        <item name="android:layout_weight">1.25</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- yellow, red and foul scores text views style -->
+    <style name="each_small_score">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- yellow, red and foul icons style -->
+    <style name="each_small_icon">
+        <item name="android:layout_width">@dimen/zero_space</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.50</item>
+    </style>
+
+    <!-- reset button style -->
+    <style name="reset_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/large_space</item>
+        <item name="android:layout_marginBottom">@dimen/small_space</item>
+        <item name="android:layout_marginLeft">@dimen/medium_space</item>
+        <item name="android:layout_marginRight">@dimen/medium_space</item>
+        <item name="android:background">@drawable/single_score_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/reset_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- football playground image view style -->
+    <style name="football_playground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/medium_space</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
 </resources>

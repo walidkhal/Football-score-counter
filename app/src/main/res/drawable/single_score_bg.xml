@@ -4,9 +4,9 @@
         <shape>
             <gradient
                 android:angle="90"
-                android:startColor="#878787"
-                android:centerColor="#fefafb"
-                android:endColor="#8d8d8b"
+                android:startColor="@color/silver_gradient_start"
+                android:centerColor="@color/silver_gradient_center"
+                android:endColor="@color/silver_gradient_end"
                 android:type="linear" />
             <padding android:bottom="5dp"
                 android:left="5dp"
@@ -18,7 +18,7 @@
 
     <item>
         <shape>
-            <solid android:color="#273460" ></solid>
+            <solid android:color="@color/deep_blue2" ></solid>
             <corners android:radius="10dp" />
         </shape>
     </item>
